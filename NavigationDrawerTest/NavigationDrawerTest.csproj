@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{01A99E85-0FD2-41A8-90C6-B0A8CA1BD5D6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>NavigationDrawerTest</RootNamespace>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AssemblyName>NavigationDrawerTest</AssemblyName>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.23.0.1.1\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.23.0.1.1\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Design">
+      <HintPath>..\packages\Xamarin.Android.Support.Design.23.0.1.1\lib\MonoAndroid403\Xamarin.Android.Support.Design.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\values-v21\Styles.xml" />
+    <AndroidResource Include="Resources\values\Styles.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_home_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_home_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_home_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_home_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_home_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_devices_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_devices_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_devices_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_devices_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_devices_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_question_answer_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_question_answer_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_question_answer_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_question_answer_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_question_answer_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_supervisor_account_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_supervisor_account_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_supervisor_account_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_supervisor_account_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_supervisor_account_black_24dp.png" />
+    <AndroidResource Include="Resources\layout\Header.axml" />
+    <AndroidResource Include="Resources\menu\NavMenu.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <XamarinComponentReference Include="xamandroidsupportdesign">
+      <Version>22.2.0.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="xamandroidsupportv7appcompat">
+      <Version>22.2.0.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\menu\" />
+    <Folder Include="Resources\values-v21\" />
+    <Folder Include="Resources\android\" />
+    <Folder Include="Resources\drawable\" />
+  </ItemGroup>
+</Project>
