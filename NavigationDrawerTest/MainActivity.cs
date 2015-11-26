@@ -42,8 +42,24 @@ namespace NavigationDrawerTest
 
 		void NavigationView_NavigationItemSelected(object sender, NavigationView.NavigationItemSelectedEventArgs e)
 		{
-			Toast.MakeText(this, e.MenuItem.TitleFormatted + " clicked.", ToastLength.Short).Show();
-			drawerLayout.CloseDrawers();
+            switch (e.MenuItem.ItemId)
+            {
+                case (Resource.Id.nav_home):
+                    // React on 'Home' selection
+                    break;
+                case (Resource.Id.nav_messages):
+                    // React on 'Messages' selection
+                    break;
+                case (Resource.Id.nav_friends):
+                    // React on 'Friends' selection
+                    break;
+                case (Resource.Id.nav_discussion):
+                    // React on 'Discussion' selection
+                    break;                
+            }
+
+            // Close drawer
+            drawerLayout.CloseDrawers();
 		}
 	}
 }
